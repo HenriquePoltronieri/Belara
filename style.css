@@ -1069,6 +1069,7 @@ h3:hover {
     line-height: 1;
     border-radius: 0 3px 3px 0;
     background: #D6A04C;
+    top: 0;
 }
 
 .img-send {
