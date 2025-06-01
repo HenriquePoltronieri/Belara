@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* primeira parte */
+
+#principal {
+    background-image: url(imgs/h1_hero1.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 45%);
+    background-blend-mode: multiply;
+    background-position: center;
+    height: 50vh;
+}
+
+
+
+
+/* header */
+
+header>img {
+    margin-left: 12%;
+    margin-top: 3.8vh;
+    vertical-align: middle;
+    margin-bottom: 3.8vh;
+}
+
+.telefone {
+    color: white;
+    text-decoration: none;
+    margin-left: 40%;
+    font-family: "Cabin", sans-serif;
+}
+
+.btn_free {
+    padding: 14px 24px;
+    background-color: #D6A04C;
+    border: 1px solid #D6A04C;
+    color: white;
+    text-decoration: none;
+    margin-left: 2%;
+    font-family: "Cabin", sans-serif;
+}
+
+.btn_free:hover {
+    background: none;
+    color: #D6A04C;
+    border-color: #D6A04C;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+/* menu */
+#menu {
+    display: inline-block;
+    height: 10px;
+    width: 2%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+
+.abrir-btn {
+    position: absolute;
+    top: 32px;
+    margin-left: -2%;
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001;
+    opacity: 0;
+}
+
+.aside {
+    position: fixed;
+    top: 0;
+    right: -334px;
+    width: 334px;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: white;
+    /* padding: 20px; */
+    transition: right 0.4s ease-in-out;
+    z-index: 1000;
+}
+
+#btn-menu:checked ~ .aside {
+  right: 0;
+}
+
+.x-fechar {
+    margin-left: 10%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+.fechar-btn {
+  background: none;
+  color: white;
+  font-size: 1.4em;
+  cursor: pointer;
+  display: block;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-h-a-s-p-c {
+    position: absolute;
+    margin-top: 65%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.aside nav ul {
+  list-style: none;
+}
+
+.aside nav ul li {
+  padding: 15px 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.aside nav ul li a {
+  margin-right: 10px;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-family: "Cabin", sans-serif;
+}
+
+
+
+
+
+/* home / services */
+
+#home-services {
+    margin-top: 75px;
+    margin-left: 260px;
+}
+
+#home-services h3 {
+    color: white;
+    text-decoration: none;
+    font-family: "Cabin", sans-serif;
+}
+
+#home-services h3 a {
+    color: white;
+    text-decoration: none;
+    font-family: "Cabin", sans-serif;
+}
+
+#home-services h1 {
+    font-family: "Cabin", sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+
+
+
+
+
+
+/* what we do */
+
+#what-escuro {
+    position: absolute;
+    background-color: #0B0016;
+    height: 109vh;
+    width: 100%;
+}
+
+.what {
+    margin-top: 10%;
+    margin-left: 9%;
+    position: absolute;
+}
+
+.what-do {
+    font-family: "Cabin", sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+
+/* primeira img */
+.img-what-1 {
+    margin-top: 19%;
+    margin-left: 150px;
+    color: white;
+    width: 420px;
+    height: 500px;
+    display: inline-block;
+    position: absolute;
+}
+
+.txt-grande {
+    font-family: "Cabin", sans-serif;
+    font-size: 30px;
+}
+
+.img-what-1:hover.img-what-1:hover:h2 {
+    color: #D6A04C;
+}
+
+.txt-pequeno {
+    font-family: "Cabin", sans-serif;
+    font-size: 15px;
+    color: white;
+    padding: 3vh;
+}
+
+.seta {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -10;
+    box-sizing: border-box;
+}
+
+.seta:hover {
+    z-index: 20;
+    background-color: white 50%;
+    z-index: +99;
+}
+
+#separar {
+    color: white;
+    width: 420px;
+    height: 400px;
+    padding: 3vh;
+    display: inline-block;
+}
+
+#separar:hover {
+    color: #D6A04C;
+    margin-top: 3%;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+/* segunda img */
+
+.img-what-2 {
+    margin-top: 19%;
+    margin-left: 580px;
+    color: white;
+    width: 420px;
+    height: 500px;
+    display: inline-block;
+    position: absolute;
+}
+
+#separar-2 {
+    color: white;
+    width: 420px;
+    height: 400px;
+    padding: 3vh;
+    display: inline-block;
+}
+
+#separar-2:hover {
+    color: #D6A04C;
+    margin-top: 3%;
+    transition: 0.5s;
+}
+
+.seta-2 {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 99;
+    box-sizing: border-box;
+}
+
+.txt-grande-2 {
+    font-family: "Cabin", sans-serif;
+    font-size: 30px;
+}
+
+.img-what-2:hover.img-what-2:hover:h2 {
+    color: #D6A04C;
+}
+
+.txt-pequeno-2 {
+    font-family: "Cabin", sans-serif;
+    font-size: 15px;
+    color: white;
+    padding: 3vh;
+}
+
+
+
+/* terceira img */
+
+.img-what-3 {
+    margin-top: 19%;
+    margin-left: 1010px;
+    color: white;
+    width: 420px;
+    height: 500px;
+    display: inline-block;
+    position: absolute;
+}
+
+#separar-3 {
+    color: white;
+    width: 420px;
+    height: 400px;
+    padding: 3vh;
+    display: inline-block;
+}
+
+#separar-3:hover {
+    color: #D6A04C;
+    margin-top: 3%;
+    transition: 0.5s;
+}
+
+.seta-3 {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 99;
+    box-sizing: border-box;
+}
+
+.txt-grande-3 {
+    font-family: "Cabin", sans-serif;
+    font-size: 30px;
+}
+
+.img-what-3:hover.img-what-3:hover:h2 {
+    color: #D6A04C;
+}
+
+.txt-pequeno-3 {
+    font-family: "Cabin", sans-serif;
+    font-size: 15px;
+    color: white;
+    padding: 3vh;
+}
+
+
+
+
+
+/* rodape */
+
+#rodape {
+    position: absolute;
+    top: 1420px;
+    width: 100%;
+    height: 500px;
+    background-color: #1E1E1E;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.rodape {
+    margin-left: 9.65%;
+    margin-right: 9.65%;
+    height: 295px;
+    width: 80%;
+}
+
+.img-belara {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    display: inline-block;
+}
+
+.links {
+    position: absolute;
+    display: inline-block;
+    margin-left: 240px;
+    margin-top: 0;
+}
+
+.links h1 {
+    color: white;
+    font-size: 27px;
+    font-family: "Cabin", sans-serif;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-family: "Cabin", sans-serif;
+    font-size: 17px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.services {
+    position: absolute;
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 480px;
+}
+
+.services h1 {
+    color: white;
+    font-size: 27px;
+    font-family: "Cabin", sans-serif;
+}
+
+.services a {
+    color: white;
+    text-decoration: none;
+    font-family: "Cabin", sans-serif;
+    font-size: 17px;
+}
+
+.services a:hover {
+    text-decoration: underline;
+}
+
+.newsletter {
+    position: absolute;
+    display: inline-block;
+    margin-left: 900px;
+    margin-top: 0;
+}
+
+.newsletter h1 {
+    color: white;
+    font-size: 27px;
+    font-family: "Cabin", sans-serif;
+}
+
+.newsletter p {
+    color: #A4A6AE;
+    ;
+    font-family: "Cabin", sans-serif;
+    font-size: 17px;
+}
+
+#email {
+    display: inline-block;
+    background: white;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.email {
+    width: 300px;
+    height: 60px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 6px;
+    color: #5C6168;
+    background: #fff;
+}
+
+.div-send {
+    box-sizing: border-box;
+    margin-left: 296px;
+    z-index: 20;
+}
+
+.btn-send {
+    position: absolute;
+    border: 0;
+    cursor: pointer;
+    padding: 21px 30px;
+    line-height: 1;
+    border-radius: 0 3px 3px 0;
+    background: #D6A04C;
+    top: 0;
+}
+
+.img-send {
+    vertical-align: middle;
+}
+
+#linha-rodape {
+    margin-left: 9.65%;
+    margin-right: 9.65%;
+    width: 80%;
+    height: 1px;
+    background-color: #A4A6AE;
+}
+
+.copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.copy p {
+    color: #A4A6AE;
+    ;
+    font-family: "Cabin", sans-serif;
+    font-size: 17px;
+}
+
+.copy span {
+    color: #D6A04C;
+    ;
+    font-family: "Cabin", sans-serif;
+    font-size: 17px;
+}
